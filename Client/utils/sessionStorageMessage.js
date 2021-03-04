@@ -2,7 +2,7 @@ class SessionStorageMessage{
     /** 获取sessionStorage数据 **/
     getSessionStorage = key => {
         try {
-            return JSON.parse(sessionStorage.getItem(key));
+            return sessionStorage && JSON.parse(sessionStorage.getItem(key));
         }catch (error){
             console.log('error',error)
         }
@@ -11,7 +11,7 @@ class SessionStorageMessage{
     /** 设置sessionStorage **/
     setSessionStorage = (key, params) => {
         try {
-            JSON.stringify(sessionStorage.setItem(key, params));
+            sessionStorage && JSON.stringify(sessionStorage.setItem(key, params));
         }catch (error){
             console.log('error',error)
         }
@@ -20,7 +20,7 @@ class SessionStorageMessage{
     /** 删除sessionStorage **/
     removeSessionStorage = key => {
         try {
-            sessionStorage.removeItem(key);
+            sessionStorage && sessionStorage.removeItem(key);
         }catch (error){
             console.log('error',error)
         }
@@ -29,7 +29,7 @@ class SessionStorageMessage{
     /** 清除sessionStorage **/
     clearSessionStorage = () => {
         try {
-            sessionStorage.clear();
+            sessionStorage && sessionStorage.clear();
         }catch (error){
             console.log('error', error)
         }

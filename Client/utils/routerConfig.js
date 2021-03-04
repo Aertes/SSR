@@ -1,5 +1,6 @@
 import { Home, Dashboard, User, ErrorPage } from '../components/pagesComponents/index';
 export default function ReaderRoute({menuKey}) {
+    // console.log(menuKey, 'menuKey');
     let Pages;
     switch (menuKey) {
         case 'home':

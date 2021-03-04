@@ -1,15 +1,16 @@
 import Head from 'next/head';
-import { useEffect } from 'react'
-import { useRouter  } from "next/router";
-import { localStorageMessage } from '../utils/index';
+import { useEffect } from 'react';
 import { Layouts } from '../components/index';
+import {localStorageMessage} from "../utils";
+import { useRouter } from "next/router";
+
 export default function Index(context) {
-    const router = useRouter();
+    const route = useRouter();
     useEffect(() => {
-        if (!!localStorageMessage.getLocalStorage('USER_INFO')){
-            router.push('/');
+        if (localStorageMessage.getLocalStorage('USER_INFO')){
+            route.push('/');
         }else {
-            router.push('/login');
+            route.push('/login');
         }
     }, [])
     return (
@@ -18,7 +19,7 @@ export default function Index(context) {
                 <title>Ares</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <Layouts/>
+            { localStorageMessage.getLocalStorage('USER_INFO')? <Layouts/> : null }
         </>
     )
 }

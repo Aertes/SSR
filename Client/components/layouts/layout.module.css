@@ -35,8 +35,18 @@
     text-align: center;
     background: #fff;
     box-shadow: 0px -10px 20px 0px rgb(185 195 212);
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+}
+.heart{
+    color: red;
 }
 
+.email{
+    margin-left: 20px;
+    color: #ccc;
+}
 .login_wrap{
     display: flex;
     justify-content: space-between;
@@ -45,9 +55,23 @@
 }
 
 .userInfo{
-
+    margin-right: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
-
+.userInfoIcon{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-image: url("../../styles/images/yun.jpg");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
 .loginOut{
 
 }
