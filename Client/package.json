@@ -14,7 +14,8 @@
     "lodash": "^4.17.21",
     "next": "10.0.7",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "swr": "^0.4.2"
   },
   "devDependencies": {
     "less-loader": "^8.0.0",

@@ -1,0 +1,53 @@
+.site_layout{
+    height: 100vh;
+}
+.trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.trigger:hover {
+    color: #1890ff;
+}
+
+.logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.site_layout_background {
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgb(185 195 212);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site_layout_main{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.site_layout_footer{
+    text-align: center;
+    background: #fff;
+    box-shadow: 0px -10px 20px 0px rgb(185 195 212);
+}
+
+.login_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.userInfo{
+
+}
+
+.loginOut{
+
+}

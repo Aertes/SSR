@@ -1,8 +1,8 @@
-import style from '../../styles/Home.module.css'
+import styles from './home.module.css';
 const Home = (props) => {
     console.log(props, 'Home --- props');
     return(
-        <div className={style.container}>
+        <div className={`${styles.home_container} container`} >
             Home
         </div>
     )

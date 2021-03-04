@@ -1,0 +1,11 @@
+.error_forbidden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5eaf81;
+    height: 100%;
+    box-shadow: 0px 0px 20px 20px #5eaf81;
+}
+.error_forbidden img{
+
+}
