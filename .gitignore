@@ -4,10 +4,10 @@
 /node_modules
 /Client/node_modules
 /Server/node_modules
-# /MicroFront End/main_app/node_modules
-# /MicroFront End/react_app/node_modules
-# /MicroFront End/vue_app/node_modules
-# /MicroFront End/angular_app/node_modules
+/MicroFrontEnd/main_app/node_modules
+/MicroFrontEnd/react_app/node_modules
+/MicroFrontEnd/vue_app/node_modules
+/MicroFrontEnd/angular_app/node_modules
 /.pnp
 .pnp.js
 .idea
