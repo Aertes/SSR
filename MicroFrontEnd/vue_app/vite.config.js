@@ -4,7 +4,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/vue3/',
   plugins: [vue()],
   /** 静态资源目录 **/
   publicDir: 'public',
