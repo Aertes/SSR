@@ -3,38 +3,40 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import { registerMicroApps, start } from 'qiankun';
+
+const getActiveRule = hash => location => location.hash.startsWith(hash)
+
 
 registerMicroApps([
   {
     name: 'reactApp',
     entry: '//localhost:2000',
-    container: '#container',
-    activeRule: '/react'
+    container: '#react',
+    activeRule: '/react',
   },
   {
     name: 'vueApp',
     entry: '//localhost:3000',
-    container: '#container',
+    container: '#vue',
     activeRule: '/vue'
   },
   {
     name: 'angularApp',
     entry: '//localhost:4000',
-    container: '#container',
+    container: '#angular',
     activeRule: '/angular'
   }
 ])
 
 start();
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 
 
